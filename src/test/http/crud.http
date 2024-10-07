@@ -1,0 +1,33 @@
+### GetAll
+GET http://localhost:8080/api/v1/films/
+
+### GetById
+GET http://localhost:8080/api/v1/films/3
+
+### Create the film
+POST http://localhost:8080/api/v1/films/
+Content-Type: application/json:
+
+{
+    "title": "Avatar",
+    "director": "James Cameron",
+    "genre": "Sci-Fi",
+    "description": "A paraplegic Marine is sent to the moon Pandora on a unique mission and becomes torn between following his orders and protecting the world he feels is his home.",
+    "releaseYear": 2009
+}
+
+### Delete the film by ID
+DELETE http://localhost:8080/api/v1/films/2
+
+### Update the film by ID
+PUT http://localhost:8080/api/v1/films/
+Content-Type: application/json:
+
+{
+    "id": "3",
+    "title": "The Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "genre": "Sci-Fi",
+    "description": "A computer hacker learns about the true nature of reality and his role in the war against its controllers.",
+    "releaseYear": 2055
+  }
