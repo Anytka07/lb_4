@@ -23,11 +23,11 @@ public class FilmService {
 
     private final FilmRepository filmRepository;
 
-    private List<Film> films = new ArrayList<>();
+    private final List<Film> films = new ArrayList<>();
     {
-        films.add(new Film("1", "Gladiator", "Ridley Scott", "Action/Drama", "A Roman general seeks revenge against the corrupt emperor who betrayed him and murdered his family.", 2000));
-        films.add(new Film("2", "Interstellar", "Christopher Nolan", "Sci-Fi", "A team of explorers travel through a wormhole...", 2014));
-        films.add(new Film("3", "The Matrix", "Lana Wachowski, Lilly Wachowski", "Sci-Fi", "A computer hacker learns about the true nature of reality and his role in the war against its controllers.", 1999));
+        films.add(new Film("1", "name1", "tttt", "Action/Drama", ".", 2000));
+        films.add(new Film("2", "name2", "2222", "Sci-Fi", ".", 2014));
+        films.add(new Film("3", "name3", "3333, Lilly Wachowski", "Sci-Fi", ".", 1999));
     }
 
     @PostConstruct
